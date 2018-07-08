@@ -1,5 +1,6 @@
 import os
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from . import db
     
 def create_app(test_config=None):
@@ -33,5 +34,7 @@ def create_app(test_config=None):
         })
 
     db.init_app(app)
+
+    CORS(app)
     
     return app
