@@ -24,8 +24,8 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    @app.route('/')
-    def main():
+    @app.route('/view')
+    def view():
         username = request.args.get('username') or 'anon'
         db.insert('view', [None, username])
         return jsonify({
