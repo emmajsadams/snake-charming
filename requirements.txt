@@ -4,6 +4,7 @@ click==6.7
 coverage==4.5.1
 Flask==1.0.2
 Flask-Cors==3.0.6
+-e git+git@github.com:codystebbins/snake-charming.git@fd2401f9835afdcf09eafa9f63ee15daaf34763d#egg=flaskr
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
